@@ -6,12 +6,15 @@ void Light::init() {
     pinMode(N3_PIN_LIGHT_3, OUTPUT);
     pinMode(N3_PIN_LIGHT_4, OUTPUT);
     pinMode(N3_PIN_LIGHT_5, OUTPUT);
+    pinMode(N3_PIN_LIGHT_ON,OUTPUT);
 
     digitalWrite(N3_PIN_LIGHT_1, LOW);
     digitalWrite(N3_PIN_LIGHT_2, LOW);
     digitalWrite(N3_PIN_LIGHT_3, LOW);
     digitalWrite(N3_PIN_LIGHT_4, LOW);
     digitalWrite(N3_PIN_LIGHT_5, LOW);
+
+    digitalWrite(N3_PIN_LIGHT_ON, HIGH);
 
     analogWrite(N3_PIN_LIGHT_A, mVal / 4);
 }

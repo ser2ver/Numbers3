@@ -9,5 +9,5 @@ void setup() {
 
 void loop() {
     display.draw();
-    delay(1000);
+    delay(500);
 }
